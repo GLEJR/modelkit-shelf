@@ -1,0 +1,97 @@
+<!doctype html>
+<!--
+  ModelKit Companion: the privacy policy. Static, published next to the shelf page on GitHub Pages
+  (GLEJR/modelkit-shelf). Linked from the app's Account and sign-in screens and the Play listing.
+  Keep it in step with what the app actually does: Docs/PlayListing.md (Data safety) says the same.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Privacy policy &middot; ModelKit Companion</title>
+<style>
+  :root { --bg: #0e0d12; --ink: #f4f1ea; --dim: #a8a3b3; --gold: #e8c468; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 6px; color: var(--gold); }
+  p, li { color: var(--ink); }
+  .dim { color: var(--dim); font-size: 14px; }
+  a { color: var(--gold); }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy policy</h1>
+<p class="dim">ModelKit Companion, by Liminal Interactive. Last updated 17 November 2026.</p>
+
+<p>The short version: your collection is yours. The app works fully on your phone without an account.
+If you make one, we keep a copy of your collection so it's backed up and syncs between your devices.
+There are no ads, no tracking and no selling of data, ever.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+  <li>Everything you add: kits, build stages, timer sessions and progress photos are saved on your phone first.</li>
+  <li>Barcode scanning happens on your phone. The camera picture never leaves it.</li>
+  <li>Share cards are drawn on your phone and handed to the app you choose. We don't upload them.</li>
+  <li>Backups you export are files you save wherever you pick. We never see them.</li>
+</ul>
+
+<h2>What we keep if you make an account</h2>
+<ul>
+  <li><strong>Your sign-in:</strong> your email address, and your password if you set one (stored only as a secure hash).</li>
+  <li><strong>Your collection:</strong> the kits, stages, sessions and photos you add, so they sync and are backed up.
+      Only you can read them.</li>
+  <li><strong>Your shelf, only if you switch it on:</strong> the kits you pick, their photos, stage and hours,
+      published at a link only you hand out. Switching the shelf off removes it.</li>
+  <li><strong>The shared kit catalogue:</strong> when you add a kit by barcode, its facts (barcode, name, brand,
+      line, scale, type) go into a shared catalogue so other people can scan the same box. Nothing personal goes in.</li>
+</ul>
+<p>We store this with <a href="https://supabase.com/privacy">Supabase</a>, our hosting provider. It's encrypted in
+transit, and access rules on the server stop anyone reading anyone else's collection.</p>
+
+<h2>Other services the app talks to</h2>
+<ul>
+  <li><strong>UPCitemdb:</strong> if a barcode isn't in our catalogue yet, the app asks UPCitemdb what it is. They
+      receive the barcode and, like any website, your phone's internet address. See
+      <a href="https://upcitemdb.com/privacy">their privacy policy</a>.</li>
+  <li><strong>Google ML Kit:</strong> the barcode scanner is Google's, running on your phone. Google says it sends
+      Google basic diagnostics (things like the device model, app version and error codes, with an
+      identifier that isn't meant to identify you or your device), not your camera picture. See
+      <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's disclosure</a>.</li>
+  <li><strong>Email:</strong> sign-in links and password resets are sent by email to the address you give.</li>
+</ul>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No ads, no analytics or tracking tools, no data brokers.</li>
+  <li>We don't sell or rent your data, or use it to profile you.</li>
+  <li>Your email isn't shown to anyone, on the shelf or anywhere else.</li>
+</ul>
+
+<h2>Deleting things</h2>
+<ul>
+  <li>Things you delete go to Recently deleted for 30 days so you can undo, then they're removed for good,
+      from your phone and our server, photo files included.</li>
+  <li><strong>Delete my account</strong> (in the app, under Account) removes your sign-in, your whole collection
+      and photos on our server, and your shelf, straight away. It offers to export a backup first.
+      Kits you added to the shared catalogue stay there (they're facts about a box, not about you) but are no
+      longer linked to you.</li>
+  <li>Signing out removes nothing; your kits stay on your phone.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The app isn't aimed at children under 13, and we don't knowingly collect their data. If you think a
+child has made an account, contact us and we'll delete it.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the date at the top changes and the app will point you to it before anything new
+applies to your data. Questions or requests: open an issue at
+<a href="https://github.com/GLEJR/modelkit-shelf/issues">github.com/GLEJR/modelkit-shelf/issues</a>
+(it's public, so leave out personal details and ask for a private reply).</p>
+</main>
+</body>
+</html>
